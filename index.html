@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de-ch">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Javaskript PHP und Jquery</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
-    
+    <header>
+        <div id="titel">
+            <a href="#titel"><img id="titelbild" src="bilder/home.png" alt="home" id="home"></a>
+            <h1 id="titelh1">Lerndokumentationen</h1>
+
+
+            <a id="open" onclick="document.getElementById('inhaltsverzeichnis').style.display='block'">index</a>
+            <div id="inhaltsverzeichnis">
+                <a id="close" onclick="document.getElementById('inhaltsverzeichnis').style.display='none'">close</a>
+                <p id="ueberschrift">Inhaltsverzeichnis</p>
+                <div class="dropdown">
+                    <div class="dropdown-content">
+                        <a class="dropdowna" href="#rational">Relationale Datenbanken</a>
+                        <a class="dropdowna" href="#datmod">Datenbanken modellieren</a>
+                        <a class="dropdowna" href="#prim">Primary key</a>
+                        <a class="dropdowna" href="#foreign">Foreign key</a>
+                        <a class="dropdowna" href="#normalisi">Normalisierung von Datenbanken</a>
+                        <a class="dropdowna" href="#dllll">DDL</a>
+                        <a class="dropdowna" href="#dcl">DCL</a>
+                        <a class="dropdowna" href="#dml">DML</a>
+                        <a class="dropdowna" href="#dql">DQL</a>
+                        <a class="dropdowna" href="#datentypen">Datentypen</a>
+                        <a class="dropdowna" href="#funktion">Funktionen/Operatoren</a>
+                        <a class="dropdowna" href="#joins">Joins</a>
+                        <a class="dropdowna" href="#import">Daten Imoprtieren</a>
+                        <a class="dropdowna" href="#northwind">Northwind</a>
+                        <a class="dropdowna" href="#glossar">Glossar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="nav">
+            <ul id="liststyle">
+                <div class="hovernav">
+                    <li><a href="index.html">SQL Datenbanken</a></li>
+                </div>
+                <div class="hovernav">
+                    <li><a href="https://zeldacovers.github.io/dokumentation101/">HTML/CSS</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
+
 </html>
