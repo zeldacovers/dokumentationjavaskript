@@ -25,7 +25,7 @@
                 <div class="dropdown">
                     <div class="dropdown-content">
                         <a class="dropdowna" href="#entwicklung">Entwicklungsumgebung</a>
-                        <a class="dropdowna" href="#datmod">Datenbanken modellieren</a>
+                        <a class="dropdowna" href="#formularfelderinhtml">Formularfelder in HTML</a>
                         <a class="dropdowna" href="#prim">Primary key</a>
                         <a class="dropdowna" href="#foreign">Foreign key</a>
                         <a class="dropdowna" href="#normalisi">Normalisierung von Datenbanken</a>
@@ -63,19 +63,26 @@
             <h1>Entwicklungsumgebung</h1>
             <hr>
             <p>wenn man mit PHP arbeitet, gibt es keinen anderen Weg als diese php Dokumente auf einen Webserver zu laden
-                um sie auszuführen. für HTML/CSS wird kein Server zum abrufen der Dateien Benötigt, da diese Clientseitig
-                geladen werden deswegen benütigt man nicht mehr als ein Browser. Ich selbst benutze den chrome Browser von
+                um sie auszuführen. für HTML/CSS wird kein Server zum Abrufen der Dateien Benötigt, da diese Clientseitig
+                geladen werden deswegen benötigt man nicht mehr als ein Browser. Ich selbst benutze den Chrome Browser von
                 Google, da die Entwicklertools sehr ausgereift sind. Um mit HTML, CSS und PHP zu programmieren/schreiben
                 braucht man nicht unbedingt einen speziellen Editor, jedoch erleichtert ein Editor die mühsame Fehlersuche
                 wesentlich. Deswegen benutze ich auch den Visual Studio Code von Microsoft denn es können auch nützliche
-                Add-Ons installiert werdem, welche beispielsweise die Tags automatisch schliessen. Sobald man den XAMPP Webserver
-                heruntergeladen hat kann man mittels dem XAMPP Control Panel den Apache Dienst starten, und die Dashboard
+                Add-Ons installiert werden, welche beispielsweise die Tags automatisch schliessen. Sobald man den XAMPP Webserver
+                heruntergeladen hat kann man mittels dem XAMPP Control Panel den Apache Dienst starten, und das Dashboard
                 Seite von XAMPP über den localhost erreichen. Wenn man in der Browsersuchleiste localhost eingibt wird der
                 htdocs Ordner nach Dateien durchsucht, welche er ausgeben kann. Im htdocs Ordner kann man weiter Unterordner
-                erstellen und diese auch via "localhost/meinorder/datei.php" abrufen.</p>
+                erstellen und diese auch via "localhost/meinorder/datei.php" abrufen.
+            </p>
 
             <div class="downloadlink">
-                <div data-aos="flip-left"  data-aos-duration="800"class="flexibexi">
+                <div data-aos="flip-up" data-aos-duration="1000" class="logoimg">
+                    <img class="logoitem" src="bilder/vs_code.png" alt="vscode">
+                    <img class="logoitem" src="bilder/Google_Chrome.png" alt="chrome">
+                    <img class="logoitem" src="bilder/XAMPP.png" alt="xampp">
+                </div>
+
+                <div data-aos="flip-left" data-aos-duration="800" class="flexibexi">
                     <div class="downloaditem">
                         <a class="hovera" href="https://az764295.vo.msecnd.net/stable/a3db5be9b5c6ba46bb7555ec5d60178ecc2eaae4/VSCodeUserSetup-x64-1.32.3.exe">VS
                             Code download</a>
@@ -86,20 +93,76 @@
                         </a>
                     </div>
                     <div class="downloaditem">
-                        <a class="hovera" href="https://www.apachefriends.org/xampp-files/7.1.27/xampp-windows-x64-7.1.27-0-VC14-installer.exe">Google
-                            Chrom Download
+                        <a class="hovera" href="https://www.google.com/intl/de_ALL/chrome/">Google Chrom download
                         </a>
                     </div>
                 </div>
-                <div data-aos="flip-up" data-aos-duration="1000" class="logoimg">
-                    <img class="logoitem" src="bilder/vs_code.png" alt="vscode">
-                    <img class="logoitem" src="bilder/Google_Chrome.png" alt="chrome">
-                    <img class="logoitem" src="bilder/XAMPP.png" alt="xampp">
-                </div>
+
             </div>
 
         </div>
+        <div class="style1" id="formularfelderinhtml" data-aos="flip-up" data-aos-duration="1000">
+            <h1>Formularfelder in HTML</h1>
+            <hr>
+            <p>Es gibt verschiedene Arten von Formularsteuerelementen, mit denen man Informationen des Benutzers der Website
+                einholen kann. Es gibt unteranderem Texteingabe Felder, Auswahlfelder und Sendeschaltflächen um die Formulare
+                einzureichen. Eine solche Übertragung auf den Webserver funktioniert folgendermassen: 1. Der Benutzer trägt
+                die Werte ins Formular ein, 2. Er klickt auf die Sendeschaltfläche, in diesem Moment werden die einzelnen
+                Steuerelementen mit dem vom Benutzer eigegebenen oder ausgewählten Werten an den Webserver gesendet, 3. Der
+                Webserver verarbeitet diese Informationen mit einer Programmiersprache wie PHP oder C# verarbeitet, unter
+                Umständen werden die Werte in der Datenbank eingetragen, 4. Der Webserver leitet den Benutzer aufgrund der
+                empfangenen Werte auf eine neue Seite weiter. </p>
+                <p style="text-align: justify;">&nbsp;</p>
+            <h2>Verschiedene Input-Felder:</h2>
+            <fieldset data-aos="fade-right" data-aos-duration="1000">
+                <legend>Normales Input Feld:</legend>
+                <input type="text" name="labe1" id="daslabel1" placeholder="Type=text">
+            </fieldset>
+            <hr class="hrspecial" data-aos="fade-right" data-aos-duration="1000">
+            <fieldset data-aos="fade-right" data-aos-duration="1000">
+                <legend>Um dateien hochzuladen:</legend>
+                <input type="file" name="labe1" id="daslabel1" placeholder="Type=file">
+            </fieldset>
+            <hr class="hrspecial" data-aos="fade-right" data-aos-duration="1000">
+
+            <fieldset data-aos="fade-right" data-aos-duration="1000">
+                <legend>Sendeschaltfläche:</legend>
+                <input type="submit" name="subscribe">
+            </fieldset>
+            <hr class="hrspecial" data-aos="fade-right" data-aos-duration="1000">
+
+
+
+            <fieldset data-aos="fade-right" data-aos-duration="1000">
+                <legend>Dropdownlisten:</legend>
+                <select name="devices" id="select1">
+                    <option value="num1">Nummer1</option>
+                    <option value="num2">Nummer2</option>
+                    <option value="num3">Nummer3</option>
+                </select>
+            </fieldset>
+            <hr class="hrspecial" data-aos="fade-right" data-aos-duration="1000">
+            <fieldset data-aos="fade-right" data-aos-duration="1000">
+                <legend>Datum:</legend>
+                <input type="date" name="jajaj">
+            </fieldset>
+            <hr class="hrspecial" data-aos="fade-right" data-aos-duration="1000">
+            <fieldset data-aos="fade-right" data-aos-duration="1000">
+                <legend>Texteingabe (Mehrzeilig)</legend>
+                <textarea name="comments" id="shj" cols="40" rows="4">Kommentarbox</textarea>
+            </fieldsetv>
+
+        </div>
     </main>
+
+
+
+
+
+
+
+
+
 
 
 

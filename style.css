@@ -119,8 +119,53 @@ a {
 
 .downloadlink {
     display: flex;
-    flex-direction: row-reverse;
     align-items: flex-start;
+}
+
+fieldset {
+    border-style: none;
+    background-color: transparent;
+    padding: 0% 0% 0% 0%;
+    margin-top: 2%;
+}
+
+legend {
+    margin: 0% 0% 1% 0%;
+    font-size: 18px;
+}
+
+input {
+    color: white;
+    background-color: #154271;
+    border-style: solid;
+    border-width: thin;
+    float: right;
+    margin: -3% 0% 0% 0%;
+}
+
+textarea {
+    color: white;
+    background-color: #154271;
+    border-style: solid;
+    border-width: thin;
+    float: right;
+    margin: -7% 0% 0% 0%;
+}
+
+select {
+    color: white;
+    background-color: #154271;
+    border-style: solid;
+    border-width: thin;
+    float: right;
+    margin: -3% 0% 0% 0%;
+}
+
+#specialdiv {
+    display: flex;
+    /* align-items: end; */
+    align-items: center;
+    justify-content: space-between;
 }
 
 .flexibexi {
@@ -176,6 +221,11 @@ hr {
     height: 2px;
     width: 100%;
 }
+.hrspecial{
+    height: 1px;
+    width: 100%;
+    margin-bottom: 10%;
+}
 
 h1 {
     margin: 0%;
@@ -184,6 +234,7 @@ h1 {
 
 h2 {
     font-size: 21px;
+    margin-bottom: 5%;
 }
 
 ul {
@@ -240,7 +291,7 @@ img {
 #open {
     float: right;
     position: fixed;
-    margin: -2% 0% 0% 92%;
+    margin: -1.5% 0% 0% 92%;
     background-color: #04add9;
     padding: 0.45%;
     border-radius: 12px;
