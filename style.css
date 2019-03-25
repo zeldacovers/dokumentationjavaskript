@@ -79,6 +79,42 @@ a {
     padding-top: 2%;
 }
 
+.downloaditem {
+    background-color: #154271;
+    padding: 1%;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 4%;
+}
+
+.downloadlink {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.flexibexi {
+    width: 200%;
+}
+
+.logoitem {
+    width: 18%;
+    box-shadow: none;
+    border-style: none;
+    margin: 2% 0% 0% -3%;
+}
+
+.logoimg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    padding-left: 1.5%;
+}
+
+
 #titel {
     padding-bottom: 5%;
     background-color: #02254b;
@@ -178,7 +214,7 @@ img {
 #open {
     float: right;
     position: fixed;
-    margin: -3% 0% 0% 92%;
+    margin: -2% 0% 0% 92%;
     background-color: #04add9;
     padding: 0.45%;
     border-radius: 12px;
