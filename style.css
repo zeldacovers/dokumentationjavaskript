@@ -81,13 +81,40 @@ a {
 
 .downloaditem {
     background-color: #154271;
-    padding: 1%;
     width: 97%;
     display: flex;
     justify-content: center;
     border-style: solid;
     border-width: thin;
     margin-top: 4%;
+    box-shadow: none;
+    -webkit-transition: background-color 0.5s, box-shadow 0.5s;
+    -moz-transition: background-color 0.5s, box-shadow 0.5s;
+    -o-transition: background-color 0.5s, box-shadow 0.5s;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.downloaditem:hover {
+    background-color: #04add9;
+    -webkit-box-shadow: 8px 7px 0px -5px rgb(255, 255, 255);
+    -moz-box-shadow: 8px 7px 0px -5px rgb(255, 255, 255);
+    box-shadow: 8px 7px 0px -5px rgb(255, 255, 255);
+}
+
+.hovera {
+    color: rgb(255, 255, 255);
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+    padding: 0% 0%;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+.hovera:hover {
+    color: black;
 }
 
 .downloadlink {
@@ -113,7 +140,6 @@ a {
     justify-content: right;
     padding-left: 1.5%;
 }
-
 
 #titel {
     padding-bottom: 5%;
@@ -246,15 +272,15 @@ img {
     margin: 0.25% 0%;
 }
 
-.dropdown-content :hover {
-    border-radius: 12px;
-    box-shadow: 1px 1px 5px 0px rgba(154, 166, 175, 0.7);
-}
-
 .dropdowna {
     text-align: left;
     margin: 0% 3% 0% 2%;
     padding: 1% 1% 1% 1%;
+}
+
+.dropdowna:hover {
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px 0px rgba(154, 166, 175, 0.7);
 }
 
 #ueberschrift {
