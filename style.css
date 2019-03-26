@@ -59,10 +59,14 @@ nav {
 li {
     margin: 0px 50px;
     margin: 0px 5px;
+    color: springgreen;
 }
 
 header {
     box-shadow: 24px 16px 30px -1px rgba(0, 0, 0, 0.41);
+}
+.color{
+    color: #dfecfb;
 }
 
 a {
@@ -247,6 +251,7 @@ h2 {
 
 ul {
     text-align: justify;
+    color: springgreen;
 }
 
 b {
@@ -372,6 +377,7 @@ img {
     background-color: #154271;
     float: right;
     display: block;
+    width: 26%;
 }
 
 .bilder2 {
