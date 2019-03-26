@@ -337,6 +337,9 @@ img {
     box-shadow: inset -4px 4px 58px -5px rgba(0, 0, 0, 0.75);
     margin-bottom: 7%;
     margin-top: 1%;
+    border-color: #ffffff73;
+    border-style: solid;
+    border-width: thin;
 }
 
 #close {
@@ -354,6 +357,22 @@ img {
     text-align: left;
     margin: 0% 3% 0% 2%;
     padding: 1% 1% 1% 1%;
+}
+
+.bilder2 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.bildweite{
+    width: 40%;
+}
+#specialbild2{
+    width: 43.2%;
 }
 
 .dropdowna:hover {
