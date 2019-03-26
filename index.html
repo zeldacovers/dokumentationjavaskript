@@ -32,7 +32,7 @@
                         <a class="dropdowna" href="#functionphp">Funktionen PHP</a>
                         <a class="dropdowna" href="#valphp">Validierung von PHP</a>
                         <a class="dropdowna" href="#unterschied">Unterschied zwischen javascript und php</a>
-                        <a class="dropdowna" href="#dql">DQL</a>
+                        <a class="dropdowna" href="#javaskripttext">Javaskript (JS)</a>
                         <a class="dropdowna" href="#datentypen">Datentypen</a>
                         <a class="dropdowna" href="#funktion">Funktionen/Operatoren</a>
                         <a class="dropdowna" href="#joins">Joins</a>
@@ -387,35 +387,105 @@
                 </tbody>
             </table>
         </div>
+        <div class="style1" id="javaskripttext" data-aos="flip-up" data-aos-duration="1000">
+            <h1>Javaskript (JS)</h1>
+            <hr>
+            <p>Von JavaScript(JS) hat sicher jeder schon mal gehört, jedoch sollte man JavaScript auf gar keinen Fall
+                mit Java verwechseln, dies ist etwas komplett Anderes und darum soll es nicht gehen. Um wieder auf
+                JavaScript zurückzukommen, JavaScript ist ebenfalls eine Skriptsprache und sie wurde ebenfalls in 1995
+                entwickelt. JavaScript hatte die Absicht Webseiten dynamischer zu machen, die selbe Aufgabe hat es auch
+                heute noch. Das einzige was heute noch dazugekommen ist, ist, dass man JavaScript auch auf Servern und
+                Microcontrollern vorfinden kann.
+
+                JavaScript wurde früher hauptsächlich clientseitig eingesetzt. JavaScript ermöglicht aber beispielsweise
+                mit dem Framework Node.js und als JScript bzw. JScript.NET auch serverseitige Anwendungen.
+
+                Die Sprache wird auch als Skriptsprache für Spiele und Anwendungsprogramme eingesetzt. Dies ist weil der
+                Sprachkern nur wenige Objekte enthält, deswegen kann das Skript relativ klein gehalten werden.</p>
+            <img src="bilder/javaskript.png" alt="bild" id="specialbild3">
+            <h2>Warum sollte man JS lernen ?
+            </h2>
+            <p>diese Frage lässt sich leicht beantworten, denn es ist ganz einfach der Fall das alle drei Sprachen
+                (HTML,CSS,JS) aufeinander aufbauen. Folgendes spricht dafür warum man Javascript als Web-Designer lernen
+                sollte: </p>
+            <ol>
+                <li><b>HTML</b> ist die Sprache des Text, heisst dass alles was man auf dieser Seite Lesen kann mit HTML
+                    gemacht wurde</li>
+                <br>
+
+                <li><b>CSS</b> ist die Sprache um den Text und das Design der webseiten zu formatieren</li>
+                <br>
+                <li><b>Javascript</b> ist die Sprache um Aktionen auf einer Webseite zu gestalten. es macht eine
+                    Webseite interaktiv. Javascript ist zusammengefasst da für zuständig, um zu sagen wie sich eine
+                    Seite
+                    verhalten soll.</li>
+
+            </ol>
+            <h2>Beispiel von einer Javascript Aktion:</h2>
+
+
+            <form name="calculator">
+                    <table class="tablestyle">
+                       <tr class="trstyle">
+                          <td class="styletd" colspan="4">
+                             <input type="text" name="display" id="display" disabled>
+                            
+                          </td>
+                       </tr>
+                       <tr class="trstyle">
+                             <td class="styletd"><input class="inputstyle" type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+                      </tr>
+                      <tr class="trstyle">
+                             <td class="styletd"><input class="inputstyle" type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+                      </tr>
+                      <tr class="trstyle">
+                             <td class="styletd"><input class="inputstyle" type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+                      </tr>
+                      <tr class="trstyle">
+                             <td class="styletd"><input class="inputstyle" type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                             <td class="styletd"><input class="inputstyle" type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+                       
+                       </tr>
+                    </table>
+                 </form>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
 
 
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script type="text/javascript">
         AOS.init({
             duration: 1200,
         })
     </script>
+    
 </body>
 
 </html>
