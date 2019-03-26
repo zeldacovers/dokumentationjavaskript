@@ -387,7 +387,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="style1" id="javaskripttext"  data-aos="flip-up" data-aos-duration="1000">
+        <div class="style1" id="javaskripttext" data-aos="flip-up" data-aos-duration="1000">
             <h1>Javaskript (JS)</h1>
             <hr>
             <p>Von JavaScript(JS) hat sicher jeder schon mal gehört, jedoch sollte man JavaScript auf gar keinen Fall
@@ -425,44 +425,79 @@
 
 
             <form name="calculator">
-                    <table class="tablestyle">
-                       <tr class="trstyle">
-                          <td data-aos="flip-up" data-aos-duration="1000" class="styletd" colspan="4">
-                             <input type="text" name="display" id="display" disabled>
-                            
-                          </td>
-                       </tr>
-                       <tr class="trstyle">
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
-                      </tr>
-                      <tr class="trstyle">
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
-                      </tr>
-                      <tr class="trstyle">
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
-                      </tr>
-                      <tr class="trstyle">
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
-                             <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle" type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
-                       
-                       </tr>
-                    </table>
-                 </form>
-                 <p>Dieser Taschenrechner z.B wurde jetzt mit Javascript gemacht. Deshalb ist Javascript von vorteil wenn man auf seiner Webseite interaktive
-                     Sachen haben will.
-                 </p>
+                <table class="tablestyle">
+                    <tr class="trstyle">
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd" colspan="4">
+                            <input type="text" name="display" id="display" disabled>
 
+                        </td>
+                    </tr>
+                    <tr class="trstyle">
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" class="operator" name="plus" value="+"
+                                onclick="calculator.display.value += '+'"></td>
+                    </tr>
+                    <tr class="trstyle">
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" class="operator" name="minus" value="-"
+                                onclick="calculator.display.value += '-'"></td>
+                    </tr>
+                    <tr class="trstyle">
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" class="operator" name="times" value="x"
+                                onclick="calculator.display.value += '*'"></td>
+                    </tr>
+                    <tr class="trstyle">
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''">
+                        </td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" name="doit" value="="
+                                onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                        <td data-aos="flip-up" data-aos-duration="1000" class="styletd"><input class="inputstyle"
+                                type="button" class="operator" name="div" value="/"
+                                onclick="calculator.display.value += '/'"></td>
+
+                    </tr>
+                </table>
+            </form>
+            <p>Dieser Taschenrechner z.B wurde jetzt mit Javascript gemacht. Deshalb ist Javascript von vorteil wenn man
+                auf seiner Webseite interaktive
+                Sachen haben will.
+            </p>
+            <br>
+
+            <h2>Javascript mit HTML-Datei verknüpfen</h2>
+            <p>Wenn Sie auf einer Webseite JavaScript verwenden wollen, m&uuml;ssen Sie dem Browser mithilfe des
+                HTML-Elements &lt;script&gt; mitteilen, dass der Code in einem Skript steht. Das Attribut src dieses
+                Elements gibt an, wo die JavaScript-Datei gespeichert ist. Hin und wieder werden Sie JavaScript-Code
+                auch auf der HTML-Seite zwischen &lt;script&gt;- und &lt;/script&gt;-Tags sehen. (Es ist allerdings
+                besser, ihn in einer eigenen Datei unterzubringen.) Grunds&auml;tzlich muss der &lt;script&gt;-Tag kurz
+                vor dem End-Tags des Bodys stehen.</p>
+            <p class="code" data-aos="flip-up" data-aos-duration="1000"><span class="grau">&lt;</span><span class="blau">script&nbsp;</span><span
+                    class="hellblau">src</span>=<span class="orange">"script.js"</span><span
+                    class="grau">&gt;&lt;/</span><span class="blau">script</span><span class="grau">&gt;</span><span
+                    class="grau"><br>&lt;/</span><span class="blau">body</span><span class="grau">&gt;</span></p>
         </div>
 
 
@@ -473,7 +508,7 @@
             duration: 1200,
         })
     </script>
-    
+
 </body>
 
 </html>
