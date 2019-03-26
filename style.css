@@ -31,11 +31,14 @@ nav {
     justify-content: center;
     margin: 0% 0% 9% 0%;
     background-color: #154271;
+    z-index: 3;
+    -webkit-box-shadow: 8px 39px 49px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 39px 49px -14px rgba(0,0,0,0.75);
+    box-shadow: 8px 39px 49px -14px rgba(0,0,0,0.75);
 }
 
 .hovernav {
     padding: 4% 0%;
-    margin: 0px 30px;
 }
 
 .hovernav:hover {
@@ -45,10 +48,11 @@ nav {
 #titelbild {
     border-radius: 50px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    width: 5%;
+    width: 71.34px;
     float: right;
-    margin: 1% 0% 0% 1%;
+    margin: 0.6% 0% 0% 1%;
     position: fixed;
+    z-index: 4;
 }
 
 #titelbild:hover {
@@ -62,10 +66,48 @@ li {
     color: springgreen;
 }
 
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+
+#navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
 header {
     box-shadow: 24px 16px 30px -1px rgba(0, 0, 0, 0.41);
 }
-.color{
+
+.color {
     color: #dfecfb;
 }
 
@@ -197,6 +239,7 @@ select {
 
 body {
     color: #dfecfb;
+    margin: 0;
 }
 
 #liststyle {
@@ -215,6 +258,7 @@ main {
     padding-left: 11%;
     padding-right: 11%;
     padding-bottom: 3%;
+    padding-top: 6%;
     color: #dfecfb;
 }
 
@@ -320,11 +364,12 @@ img {
 #open {
     float: right;
     position: fixed;
-    margin: -1.5% 0% 0% 92%;
+    margin: -2.5% 0% 0% 92%;
     background-color: #04add9;
     padding: 0.45%;
     border-radius: 12px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    z-index: 4;
 }
 
 #inhaltsverzeichnis {
@@ -584,7 +629,7 @@ ol {
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.75);
         width: 6%;
         float: right;
-        margin: 1% 0% 0% 1%;
+        margin: 0.6% 0% 0% 1%;
         position: fixed;
     }
     #titelbild:hover {
