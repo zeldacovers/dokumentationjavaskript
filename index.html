@@ -18,7 +18,7 @@
             <h1 id="titelh1">Lerndokumentationen</h1>
 
 
-            <a id="open" onclick="document.getElementById('inhaltsverzeichnis').style.display='block'">index</a>
+            <a id="open" onclick="document.getElementById('inhaltsverzeichnis').style.display='block'">inhalt</a>
             <div id="inhaltsverzeichnis">
                 <a id="close" onclick="document.getElementById('inhaltsverzeichnis').style.display='none'">close</a>
                 <p id="ueberschrift">Inhaltsverzeichnis</p>
@@ -26,9 +26,9 @@
                     <div class="dropdown-content">
                         <a class="dropdowna" href="#entwicklung">Entwicklungsumgebung</a>
                         <a class="dropdowna" href="#formularfelderinhtml">Formularfelder in HTML</a>
-                        <a class="dropdowna" href="#prim">Primary key</a>
-                        <a class="dropdowna" href="#foreign">Foreign key</a>
-                        <a class="dropdowna" href="#normalisi">Normalisierung von Datenbanken</a>
+                        <a class="dropdowna" href="#dom">D.O.M</a>
+                        <a class="dropdowna" href="#php">Was ist PHP?</a>
+                        <a class="dropdowna" href="#phpsyntax">Aufbau von PHP</a>
                         <a class="dropdowna" href="#dllll">DDL</a>
                         <a class="dropdowna" href="#dcl">DCL</a>
                         <a class="dropdowna" href="#dml">DML</a>
@@ -52,7 +52,9 @@
                     <li><a href="https://zeldacovers.github.io/dokumentation101/">HTML/CSS</a></li>
                 </div>
                 <div class="hovernav">
-                    <li><a href="https://zeldacovers.github.io/dokumentationjavaskript/index.html">Javaskript/Jquery/PHP</a></li>
+                    <li><a
+                            href="https://zeldacovers.github.io/dokumentationjavaskript/index.html">Javaskript/Jquery/PHP</a>
+                    </li>
                 </div>
             </ul>
         </nav>
@@ -62,16 +64,24 @@
         <div id="entwicklung" class="style1">
             <h1>Entwicklungsumgebung</h1>
             <hr>
-            <p>wenn man mit PHP arbeitet, gibt es keinen anderen Weg als diese php Dokumente auf einen Webserver zu laden
-                um sie auszuführen. für HTML/CSS wird kein Server zum Abrufen der Dateien Benötigt, da diese Clientseitig
-                geladen werden deswegen benötigt man nicht mehr als ein Browser. Ich selbst benutze den Chrome Browser von
+            <p>wenn man mit PHP arbeitet, gibt es keinen anderen Weg als diese php Dokumente auf einen Webserver zu
+                laden
+                um sie auszuführen. für HTML/CSS wird kein Server zum Abrufen der Dateien Benötigt, da diese
+                Clientseitig
+                geladen werden deswegen benötigt man nicht mehr als ein Browser. Ich selbst benutze den Chrome Browser
+                von
                 Google, da die Entwicklertools sehr ausgereift sind. Um mit HTML, CSS und PHP zu programmieren/schreiben
-                braucht man nicht unbedingt einen speziellen Editor, jedoch erleichtert ein Editor die mühsame Fehlersuche
+                braucht man nicht unbedingt einen speziellen Editor, jedoch erleichtert ein Editor die mühsame
+                Fehlersuche
                 wesentlich. Deswegen benutze ich auch den Visual Studio Code von Microsoft denn es können auch nützliche
-                Add-Ons installiert werden, welche beispielsweise die Tags automatisch schliessen. Sobald man den XAMPP Webserver
-                heruntergeladen hat kann man mittels dem XAMPP Control Panel den Apache Dienst starten, und das Dashboard
-                Seite von XAMPP über den localhost erreichen. Wenn man in der Browsersuchleiste localhost eingibt wird der
-                htdocs Ordner nach Dateien durchsucht, welche er ausgeben kann. Im htdocs Ordner kann man weiter Unterordner
+                Add-Ons installiert werden, welche beispielsweise die Tags automatisch schliessen. Sobald man den XAMPP
+                Webserver
+                heruntergeladen hat kann man mittels dem XAMPP Control Panel den Apache Dienst starten, und das
+                Dashboard
+                Seite von XAMPP über den localhost erreichen. Wenn man in der Browsersuchleiste localhost eingibt wird
+                der
+                htdocs Ordner nach Dateien durchsucht, welche er ausgeben kann. Im htdocs Ordner kann man weiter
+                Unterordner
                 erstellen und diese auch via "localhost/meinorder/datei.php" abrufen.
             </p>
 
@@ -84,11 +94,13 @@
 
                 <div data-aos="flip-left" data-aos-duration="800" class="flexibexi">
                     <div class="downloaditem">
-                        <a class="hovera" href="https://az764295.vo.msecnd.net/stable/a3db5be9b5c6ba46bb7555ec5d60178ecc2eaae4/VSCodeUserSetup-x64-1.32.3.exe">VS
+                        <a class="hovera"
+                            href="https://az764295.vo.msecnd.net/stable/a3db5be9b5c6ba46bb7555ec5d60178ecc2eaae4/VSCodeUserSetup-x64-1.32.3.exe">VS
                             Code download</a>
                     </div>
                     <div class="downloaditem">
-                        <a class="hovera" href="https://www.apachefriends.org/xampp-files/7.1.27/xampp-windows-x64-7.1.27-0-VC14-installer.exe">XAMPP
+                        <a class="hovera"
+                            href="https://www.apachefriends.org/xampp-files/7.1.27/xampp-windows-x64-7.1.27-0-VC14-installer.exe">XAMPP
                             download
                         </a>
                     </div>
@@ -104,15 +116,22 @@
         <div class="style1" id="formularfelderinhtml" data-aos="flip-up" data-aos-duration="1000">
             <h1>Formularfelder in HTML</h1>
             <hr>
-            <p>Es gibt verschiedene Arten von Formularsteuerelementen, mit denen man Informationen des Benutzers der Website
-                einholen kann. Es gibt unteranderem Texteingabe Felder, Auswahlfelder und Sendeschaltflächen um die Formulare
-                einzureichen. Eine solche Übertragung auf den Webserver funktioniert folgendermassen: 1. Der Benutzer trägt
-                die Werte ins Formular ein, 2. Er klickt auf die Sendeschaltfläche, in diesem Moment werden die einzelnen
-                Steuerelementen mit dem vom Benutzer eigegebenen oder ausgewählten Werten an den Webserver gesendet, 3. Der
-                Webserver verarbeitet diese Informationen mit einer Programmiersprache wie PHP oder C# verarbeitet, unter
-                Umständen werden die Werte in der Datenbank eingetragen, 4. Der Webserver leitet den Benutzer aufgrund der
+            <p>Es gibt verschiedene Arten von Formularsteuerelementen, mit denen man Informationen des Benutzers der
+                Website
+                einholen kann. Es gibt unteranderem Texteingabe Felder, Auswahlfelder und Sendeschaltflächen um die
+                Formulare
+                einzureichen. Eine solche Übertragung auf den Webserver funktioniert folgendermassen: 1. Der Benutzer
+                trägt
+                die Werte ins Formular ein, 2. Er klickt auf die Sendeschaltfläche, in diesem Moment werden die
+                einzelnen
+                Steuerelementen mit dem vom Benutzer eigegebenen oder ausgewählten Werten an den Webserver gesendet, 3.
+                Der
+                Webserver verarbeitet diese Informationen mit einer Programmiersprache wie PHP oder C# verarbeitet,
+                unter
+                Umständen werden die Werte in der Datenbank eingetragen, 4. Der Webserver leitet den Benutzer aufgrund
+                der
                 empfangenen Werte auf eine neue Seite weiter. </p>
-                <p style="text-align: justify;">&nbsp;</p>
+            <p style="text-align: justify;">&nbsp;</p>
             <h2>Verschiedene Input-Felder:</h2>
             <fieldset data-aos="fade-right" data-aos-duration="1000">
                 <legend>Normales Input Feld:</legend>
@@ -151,7 +170,65 @@
                 <legend>Texteingabe (Mehrzeilig):</legend>
                 <textarea name="comments" id="shj" cols="40" rows="4">Kommentarbox</textarea>
             </fieldset>
+            <hr class="hrspecial" data-aos="fade-right" data-aos-duration="1000">
+            <p data-aos="flip-up" data-aos-duration="1000">Diese Formulare benötigen wir dann später um mittels
+                Javaskript (Clientseitig) und PHP (Serverseitig) die
+                Daten weiter zu verarbeiteim und zu verändern. jedoch will ich mich zuerst um die grundlagen von
+                Javaskript und PHP kümmern, bevor es weiter
+                um Formulare geht.</p>
 
+        </div>
+        <div class="style1" id="dom" data-aos="flip-up" data-aos-duration="1000">
+            <h1>D.O.M</h1>
+            <hr>
+            <p>Ist die Abkürzung für <b>Document Object Model</b> und es ist eine Methode, welche den Aufbau aller
+                HTML-Dokumente als Baumstruktur darstellt. Jeder "Ast" stellt somit zum Beispiel einen Absatz oder einen
+                Titel dar. Für Browser bildet dies einen wichtigen Baustein für dynamische Webseiten. Ganz gut sehen
+                kann man es im Chrome Developer Tool. Mit Windows öffnet man dies mit [F12], bei Linux mit
+                [Ctrl]+[Shift]+[J] und mit Apple geht es mit [⌘]+[Optionstaste]+[J].</p>
+            <p style="text-align: justify;">&nbsp;</p>
+
+            <h2>hier noch ein Beispiel eines D.O.M:</h2>
+            <img src="bilder/domimg.png" alt="D.O.M" class="nobox">
+
+        </div>
+        <div class="style1" id="php" data-aos="flip-up" data-aos-duration="1000">
+            <h1>Was ist PHP?</h1>
+            <hr>
+            <p>PHP ist die Abkürzung für Personal Home Page Tools. Die Syntax von PHP ähnelt der Syntax von C oder
+                pearl, damit dient
+                bekanntlich zur Erstellung von dynamischen Webseiten und vielen anderen Möglichkeiten wie zum Beispiel
+                das Eintragen von Daten in Datenbanken, aber bei uns im Kurs ging es grösstenteils um Formulare. PHP ist
+                nicht kostenpflichtig, sondern es kann gratis auf einem Webserver verwendet werden. Wie in der
+                Einleitung schon erwähnt ist PHP serverbasiert, das heisst, dass alle Prozesse auf dem Webserver
+                ablaufen und somit die Clients weniger effektive Rechenleistung auf ihrem Gerät vorweisen müssen.
+                Ursprünglich war PHP nur eine Ansammlung von Perl-Skripten, die Rasmus Lerdorf 1995 entwickelt hat, um
+                seinen Online-Lebenslauf zu schreiben. Heute gilt dieser als Entwickler von PHP.</p>
+            <img src="bilder/php-1.png" alt="php" id="elefant">
+
+        </div>
+        <div class="style1" id="phpsyntax" data-aos="flip-up" data-aos-duration="1000">
+            <h1>Aubau von PHP (Syntax)</h1>
+            <hr>
+            <p> als aller erstes sollte man bei einem PHP file wissen, dass man nicht nur php dort hinein schreiben
+                kann, sonder auch andere sprachen wie
+                html oder css können in einem php file vertreten sein. Wenn man aber ein php Skript starten will macht
+                man dies mit:
+            </p>
+            <p class="code" data-aos="flip-up" data-aos-duration="1000">
+                &lt;?php
+            </p>
+            <p>
+                wenn man das Skript wieder beenden will, benutz man folgenden tag:
+            </p>
+            <p class="code" data-aos="flip-up" data-aos-duration="1000">?&gt;</p>
+            <p>als nächstes machen wir ein Beispiel zu einer folständigen Funktion:</p>
+            <p class="code" class="code" data-aos="flip-up" data-aos-duration="1000">
+                &lt;?php&nbsp;<br />function frame() {&nbsp;<br />echo "Dies wird den Text
+                ausgeben";&nbsp;<br />}&nbsp;<br />?&gt;
+            </p>
+            <p>Um diese Funktion dann später zu benutzen, muss man folgende Syntax verwenden:</p>
+            <p class="code">&lt;?php&nbsp;<br />frame();&nbsp;<br />?&gt;<br>&nbsp;</p>
         </div>
     </main>
 

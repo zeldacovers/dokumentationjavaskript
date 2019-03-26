@@ -221,10 +221,12 @@ hr {
     height: 2px;
     width: 100%;
 }
-.hrspecial{
+
+.hrspecial {
     height: 1px;
     width: 100%;
     margin-bottom: 10%;
+    background-color: #92929263;
 }
 
 h1 {
@@ -239,6 +241,10 @@ h2 {
 
 ul {
     text-align: justify;
+}
+
+b {
+    color: springgreen;
 }
 
 .style1 {
@@ -284,8 +290,19 @@ img {
     color: #00ff68;
 }
 
+.nobox {
+    box-shadow: none;
+    padding-left: 2%;
+}
+
 .innerjoin {
     width: 30%;
+}
+
+#elefant {
+    box-shadow: none;
+    width: 50%;
+    margin-left: 25%;
 }
 
 #open {
@@ -310,6 +327,16 @@ img {
     color: white;
     text-align: center;
     z-index: 4;
+}
+
+.code {
+    background-color: #154271;
+    padding: 1% 2%;
+    -webkit-box-shadow: inset -4px 4px 58px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -4px 4px 58px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -4px 4px 58px -5px rgba(0, 0, 0, 0.75);
+    margin-bottom: 7%;
+    margin-top: 1%;
 }
 
 #close {
