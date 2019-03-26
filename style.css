@@ -255,6 +255,7 @@ b {
 
 td {
     border: solid 2px white;
+    padding-left: 1%
 }
 
 p {
@@ -335,7 +336,7 @@ img {
     -webkit-box-shadow: inset -4px 4px 58px -5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset -4px 4px 58px -5px rgba(0, 0, 0, 0.75);
     box-shadow: inset -4px 4px 58px -5px rgba(0, 0, 0, 0.75);
-    margin-bottom: 7%;
+    margin-bottom: 9%;
     margin-top: 1%;
     border-color: #ffffff73;
     border-style: solid;
@@ -359,6 +360,14 @@ img {
     padding: 1% 1% 1% 1%;
 }
 
+.linkbutton {
+    margin: 1% 0% 0% 2%;
+    padding: 0.5%;
+    background-color: #154271;
+    float: right;
+    display: block;
+}
+
 .bilder2 {
     display: flex;
     flex-direction: row;
@@ -366,13 +375,25 @@ img {
     align-content: flex-start;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
 }
-.bildweite{
+
+#tabelle1 {
+    background-color: #015bff40;
+    text-align: center;
+  
+}
+
+.bildweite {
     width: 40%;
 }
-#specialbild2{
+
+#specialbild2 {
     width: 43.2%;
+}
+
+table {
+    margin-top: 5%;
 }
 
 .dropdowna:hover {

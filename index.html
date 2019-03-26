@@ -30,8 +30,8 @@
                         <a class="dropdowna" href="#php">Was ist PHP?</a>
                         <a class="dropdowna" href="#phpsyntax">Aufbau von PHP</a>
                         <a class="dropdowna" href="#functionphp">Funktionen PHP</a>
-                        <a class="dropdowna" href="#dcl">DCL</a>
-                        <a class="dropdowna" href="#dml">DML</a>
+                        <a class="dropdowna" href="#valphp">Validierung von PHP</a>
+                        <a class="dropdowna" href="#unterschied">Unterschied zwischen javascript und php</a>
                         <a class="dropdowna" href="#dql">DQL</a>
                         <a class="dropdowna" href="#datentypen">Datentypen</a>
                         <a class="dropdowna" href="#funktion">Funktionen/Operatoren</a>
@@ -238,19 +238,157 @@
                 falls Sie jedoch trotdem noch mehr Funktionen von PHP lernen wollen klicken sie auf den Button unten
                 rechts.
                 fangen wir also mit dem ersten Funktion an:
+                <button class="linkbutton"><a
+                        href="https://www.php-einfach.de/php-tutorial/die-wichtigsten-php-funktionen/">Mehr über
+                        Funktionen</a></button>
                 <br>
                 <br>
                 <br>
 
-                <b>Post/Get</b>: mit diesen Beiden funktionen hat man die Möglichkeit eingegebene Werte in einem Vormular
-                abzurufen und wider anzuzeigen. Jedoch gibt es einen wesentlichen unterschied zwischen dem Befehl Get und Post. die
+                <b>Post/Get</b>: mit diesen Beiden funktionen hat man die Möglichkeit eingegebene Werte in einem
+                Vormular
+                abzurufen und wider anzuzeigen. Jedoch gibt es einen wesentlichen unterschied zwischen dem Befehl Get
+                und Post. die
                 unten stehenden Bilder denke ich erklären den unterschied ziemlich gut.
             </p>
             <div class="bilder2">
                 <img class="bildweite" src="bilder/difference-between-get-and-post.png" alt="get/post">
                 <img class="bildweite" id="specialbild2" src="bilder/Get-vs-Post.jpg" alt="get/post2">
             </div>
+            <p>der Sytnax sieht wie folgt aus:</p>
+            <p class="code" data-aos="flip-up" data-aos-duration="1000">echo $_POST["id"] <br>method="get" oder
+                method="post"</p>
+            <p>mit dem nächsten Befehl kann man das jetzige Datum mit php anzeigen lassen:</p>
+            <p class="code" data-aos="flip-up" data-aos-duration="1000">echo date("d.m.Y H:i:s");</p>
         </div>
+        <div class="style1" id="valphp" data-aos="flip-up" data-aos-duration="1000">
+            <h1>Validierung von PHP</h1>
+            <hr>
+            <p>Die Serverseitige Validierung ist eines der wichtigsten Themen, um seine Webseite / Server zu schützen.
+                So können zum SQL-Injections verhindert werden mit nur einer Zeile PHP-Code, welche unten stehend
+                gezeigt werden.</p>
+            <br>
+            <p><b>$prename = mysqli_real_escape_string($_REQUEST['prename']);</b> Das $_REQUEST ist ein Platzhalter für
+                POST
+                oder GET, so müssen Sie sich nicht darauf achten, was Sie verwendet haben. Diese Funktion schliesst alle
+                Strings aus, welche wie SQL-Befehle aussehen. Um die Seite vor Cross Site Scripting (XSS) zu schützen,
+                können Sie die Variable wie folgt definieren:</p>
+            <p><b>$lastname = htmlspecialchars($_REQUEST['lastname']);</b> Diese Funktion generiert aus allen
+                Spezialzeichen
+                wie > einen Zeichencode, sodass XSS-Attacken unschädlich gemacht werden. Diese Variablen könnten jetzt
+                in eine Datenbank eingefügt werden, PHP könnte Sie jetzt aber auch weiterverarbeiten. Hier noch das Feld
+                um den Code zu kopieren:</p>
+            <p class="code" data-aos="flip-up" data-aos-duration="1000">$prename =
+                mysqli_real_escape_string($_REQUEST['prename']);<br>
+                $prename = mysqli_real_escape_string($_REQUEST['prename']);</p>
+        </div>
+        <div id="unterschied" class="style1" data-aos="flip-up" data-aos-duration="1000">
+            <h1>Unterschied zwischen javascript und php</h1>
+            <hr>
+            <table>
+                <tbody>
+                    <tr id="tabelle1">
+                        <td>
+                            <p>Thema</p>
+                        </td>
+                        <td>
+                            <p>Javascript</p>
+                        </td>
+                        <td>
+                            <p>PHP</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Dateieindung</p>
+                        </td>
+                        <td>
+                            <p>.js</p>
+                        </td>
+                        <td>
+                            <p>.php</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Variablen</p>
+                        </td>
+                        <td>
+                            <p>var testegal = 'test';</p>
+                        </td>
+                        <td>
+                            <p>$testegal = 'test';</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Variablen ausgeben</p>
+                        </td>
+                        <td>
+                            <p>document.write(testegal);</p>
+                        </td>
+                        <td>
+                            <p>echo $testegal</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Kommentieren</p>
+                        </td>
+                        <td>
+                            <p>// Kommentar</p>
+                        </td>
+                        <td>
+                            <p>// oder # Kommentar</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Scope der Variable</p>
+                        </td>
+                        <td colspan="2">
+                            <p>JS kein Scope, bei PHP nur mit $GLOBAL['variable'], damit Sie Variablen ausser/innerhalb
+                                einer Funktion verwenden k&ouml;nnen</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Arrays</p>
+                        </td>
+                        <td>
+                            <p>var array = ['1', '2'];</p>
+                        </td>
+                        <td>
+                            <p>$array = array('1', '2');</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>ELSE IF Abfragen</p>
+                        </td>
+                        <td>
+                            <p>else if (bedingung)</p>
+                        </td>
+                        <td>
+                            <p>elseif (bedingung)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Objekte</p>
+                        </td>
+                        <td>
+                            <p>Objekte: name.eigenschaft</p>
+                        </td>
+                        <td>
+                            <p>Assoz. Arrays: name['eigenschaft']</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
     </main>
 
 
