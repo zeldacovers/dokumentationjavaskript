@@ -32,9 +32,9 @@ nav {
     margin: 0% 0% 9% 0%;
     background-color: #154271;
     z-index: 3;
-    -webkit-box-shadow: 8px 39px 49px -14px rgba(0,0,0,0.75);
-    -moz-box-shadow: 8px 39px 49px -14px rgba(0,0,0,0.75);
-    box-shadow: 8px 39px 49px -14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 39px 49px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 39px 49px -14px rgba(0, 0, 0, 0.75);
+    box-shadow: 8px 39px 49px -14px rgba(0, 0, 0, 0.75);
 }
 
 .hovernav {
@@ -79,10 +79,8 @@ li {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 9px;
 }
-
-
 
 #navbar a.active {
     background-color: #4CAF50;
@@ -605,16 +603,75 @@ ol {
 }
 
 @media screen and (max-width: 769px) {
+    input {
+        color: white;
+        background-color: #154271;
+        border-style: solid;
+        border-width: thin;
+        float: right;
+        margin: -3% -29% 0% 0%;
+        width: 30%;
+    }
+    legend {
+        margin: 0% 0% 1% 0%;
+        font-size: 12px;
+    }
+    select {
+        color: white;
+        background-color: #154271;
+        border-style: solid;
+        border-width: thin;
+        float: right;
+        margin: -3% -27% 0% 0%;
+    }
+    textarea {
+        color: white;
+        background-color: #154271;
+        border-style: solid;
+        border-width: thin;
+        float: right;
+        margin: 2% -30% 0% 0%;
+    }
+    a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 9px;
+    }
     main {
         margin-right: -1%;
         margin-left: -1%;
         background-color: #001429;
         box-shadow: 7px 0px 86px 3px rgba(0, 0, 0, 0.7);
-        padding-left: 22%;
-        padding-right: 22%;
+        padding-left: 5%;
+        padding-right: 23%;
         padding-bottom: 3%;
         color: #dfecfb;
     }
+    .tablestyle {
+        /* margin: auto; */
+        width: 295px;
+        max-width: 295px;
+        height: 325px;
+        text-align: center;
+        border-radius: 4px;
+        padding-right: 10px;
+        margin-bottom: 11%;
+    }
+    #display {
+        width: 100%;
+        /* max-width: 270px; */
+        font-size: 26px;
+        text-align: right;
+        background-color: #143e6a;
+        float: left;
+        margin-top: 14%;
+        margin-bottom: 1;
+    }
+
     #open {
         float: right;
         position: fixed;
@@ -636,12 +693,6 @@ ol {
         background-color: #001429;
         box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     }
-    a {
-        text-decoration: none;
-        color: #dfecfb;
-        font-size: 14px;
-        font-family: 'Ubuntu', sans-serif;
-    }
     h1 {
         margin: 0%;
         text-align: left;
@@ -660,7 +711,6 @@ ol {
     }
     h2 {
         font-size: 14px;
-        text-align: center;
     }
     li {
         font-size: 10px;
