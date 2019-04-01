@@ -95,6 +95,7 @@ li {
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 11px;
 }
 
 .sticky+.content {
